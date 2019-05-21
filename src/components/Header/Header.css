@@ -1,0 +1,13 @@
+header{
+    padding-top: calc(6rem + 50px);
+}
+
+h1{
+    font-size: 60px;
+    color:#32332e;
+    font-weight: bold
+}
+
+h3{
+    color:#565654;
+}

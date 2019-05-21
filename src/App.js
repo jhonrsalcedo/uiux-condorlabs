@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Nav from './components/Nav/Nav';
+import Header from './components/Header/Header';
+import Gallery from './components/Gallery/Gallery';
 import Footer from './components/Footer/Footer';
 
 class App extends Component {
@@ -11,13 +13,9 @@ class App extends Component {
      }
   }
 
- 
- 
   componentDidMount() {
     this.getApi();       
   }
-
- 
   getApi = async() =>{
 
       //obtener con axios get
@@ -37,6 +35,8 @@ class App extends Component {
   render() { 
     return ( <div className="container">
       <Nav />
+      <Header />
+      <Gallery />
       <Footer />
     </div> );
   }
