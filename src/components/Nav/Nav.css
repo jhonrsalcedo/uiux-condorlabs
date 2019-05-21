@@ -1,9 +1,18 @@
 .top-navbar-condor {
-    background-color: rgba(253,205,7,.8);
+    background-color: #feda44;
 }
 .bg-menu {
     background-color: #000000!important;
 }
-a.bg-menu:focus, a.bg-menu:hover, button.bg-menu:focus, button.bg-menu:hover {
-    background-color: gray!important;
+a.bg-menu:hover {
+    background-color: rgb(243, 238, 238)!important;
+}
+.nav-link {
+    color: #000000!important;
+}
+a.nav-link {
+    color: #fff;
+}
+a.nav-link:hover{
+    color: gray;
 }
