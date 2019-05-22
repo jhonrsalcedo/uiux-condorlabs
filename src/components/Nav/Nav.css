@@ -19,4 +19,7 @@ a.nav-link {
 a.nav-link:hover{
     color: gray;
 }
-
+a:hover {
+    color: #0056b3;
+    text-decoration: none !important; 
+}
