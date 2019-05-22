@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Photo.css'
 
 const Photo = (props) => {
