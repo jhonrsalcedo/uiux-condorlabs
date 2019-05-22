@@ -16,7 +16,7 @@ const Photo = (props) => {
       <div className="los1">
       <a href={props.info.link}>
                       
-                      <img src={props.info.images.standard_resolution.url} alt={props.info.username} width="150" height="150"/></a>
+                      <img src={props.info.images.low_resolution.url} alt={props.info.username} width="100" height="100"/></a>
         
       </div>
     </div>

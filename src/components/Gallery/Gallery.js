@@ -9,6 +9,7 @@ class Gallery extends Component {
             <div className="row m-bottom col-md-12">
                 
          {Object.keys(this.props.apiGallery).map(key =>(
+             
              <Photo
              
              key={key}
