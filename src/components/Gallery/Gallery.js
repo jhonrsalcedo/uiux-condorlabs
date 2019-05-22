@@ -9,9 +9,14 @@ class Gallery extends Component {
     render() { 
         return ( 
 
-            <div className=" ">
-                <p>desde Gallery</p>
-                <Photo />
+            <div className="row">
+               {/*  {Object.keys(this.props.galleryapi).map(key =>(
+                    <Photo
+                    key={key}
+                        info={this.props.galleryapi[key]}
+                    />
+                ))} */}
+            <Photo />
             </div>
          );
     }

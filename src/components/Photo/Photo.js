@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
+import './Photo.css'
 
-class Phontos extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-            <p>desde fotos</p>
-         );
-    }
+const Photo = () => {
+    return ( 
+        <div>
+            desde photo
+        </div>
+     );
 }
  
-export default Phontos;
+export default Photo;
