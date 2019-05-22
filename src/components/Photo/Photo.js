@@ -9,7 +9,7 @@ const Photo = (props) => {
         <div className="col-3 p-bottom">
             <a href={props.info.link}>
                       
-                    <img src={props.info.images.thumbnail.url} alt={props.info.username} className="rounded-circle"/></a>
+                    <img src={props.info.images.thumbnail.url} alt={props.info.username} className="rounded-circle img-fluid"/></a>
         </div>
      );
 }
