@@ -1,5 +1,8 @@
 header{
-    padding-top: calc(6rem + 50px);
+    padding-top: 100px;
+}
+.p-bottom{
+    padding-bottom: 30px;
 }
 
 h1{

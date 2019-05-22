@@ -19,12 +19,14 @@ class App extends Component {
   }
   getApi = async() =>{
 
-      //obtener con axios get
+      //obtener con la libreria de axios get
+      // la ventaja de esta libreria es que facilitar el consumo de servicios web, API REST que devuelvan datos JSON
       try{
           const response = await axios.get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${this.token}`);
-          console.log(response.data) 
+          console.log(response.data.data) 
+          
           this.setState({
-            api:response.data
+            api:response.data.data
             })
       }catch(error){
           console.error(`Hay un error ${error}`)
@@ -37,11 +39,11 @@ class App extends Component {
     return ( <div className="container">
        <Nav />
        <Header />
-      
+       <div className="container">
       <Gallery 
         apiGallery = {this.state.api}
       />
-     
+     </div>
       <Footer />
     </div> );
   }
