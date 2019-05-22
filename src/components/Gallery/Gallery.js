@@ -5,7 +5,7 @@ import Photo from '../Photo/Photo';
 class Gallery extends Component {
     render() { 
         return ( 
-
+//en este componente recorremos la lista con map, es necesario utilizar las key para idententificar cada id del arreglo
             <div className="row m-bottom">
                 
          {Object.keys(this.props.apiGallery).map(key =>(
