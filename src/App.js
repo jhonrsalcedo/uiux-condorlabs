@@ -9,9 +9,10 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = { 
-      apiinstagram:[]
+      api:[]
      }
   }
+  token='31081980.5032f3e.f622c64980a04338a87830bafb00ab01';
 //peticion a la api solo despues de que haya sido montado en el dom
   componentDidMount() {
     this.getApi();       
@@ -20,10 +21,10 @@ class App extends Component {
 
       //obtener con axios get
       try{
-          const response = await axios.get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=31081980.5032f3e.f622c64980a04338a87830bafb00ab01`);
+          const response = await axios.get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${this.token}`);
           console.log(response.data) 
           this.setState({
-            apiinstagram:response.data
+            api:response.data
             })
       }catch(error){
           console.error(`Hay un error ${error}`)
@@ -36,11 +37,11 @@ class App extends Component {
     return ( <div className="container">
        <Nav />
        <Header />
-      <div className="container">
+      
       <Gallery 
-        apiinstagram = {this.state.apiinstagram}
+        apiGallery = {this.state.api}
       />
-      </div>
+     
       <Footer />
     </div> );
   }

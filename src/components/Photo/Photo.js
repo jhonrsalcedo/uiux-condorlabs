@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './Photo.css'
 
-const Photo = () => {
+const Photo = (props) => {
+    console.log(props.info);
     return ( 
-        <div>
+        <div className="col-4">
             desde photo
         </div>
      );
