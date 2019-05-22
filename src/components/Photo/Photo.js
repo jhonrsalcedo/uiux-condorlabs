@@ -6,7 +6,7 @@ const Photo = (props) => {
     const {images} = props.info;
     if(!images) return null;
     return ( 
-        <div className="col-3 p-bottom">
+        <div className="col-3 p-bottom text-center">
             <a href={props.info.link}>
                       
                     <img src={props.info.images.thumbnail.url} alt={props.info.username} className="rounded-circle img-fluid"/></a>
