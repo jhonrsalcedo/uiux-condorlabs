@@ -6,7 +6,7 @@ class Gallery extends Component {
     render() { 
         return ( 
 //en este componente recorremos la api con map, es necesario utilizar las key para idententificar cada id del arreglo
-            
+            <div className="m-bottom">
             <ul className="diamonds">
                         
                 {Object.keys(this.props.apiGallery).map(key =>(
@@ -18,7 +18,7 @@ class Gallery extends Component {
                     />
                 ))}
             </ul>
-           
+            </div>
          );
     }
 }
