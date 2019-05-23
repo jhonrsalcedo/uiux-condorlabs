@@ -11,8 +11,12 @@ const Photo = (props) => {
     return ( 
 
         //este div general se encargara de pintar los datos en patanlla
-        <li className="diamond">
-	<img src="http://lea.verou.me/book/kitten-web.jpg" />
+        <li>
+            <a href={props.info.link} className="diamond">
+               
+                           <img className="content" src={props.info.images.standard_resolution.url} alt={props.info.username} width="390" height="640"/>
+                
+            </a>
 </li>
         
      );
