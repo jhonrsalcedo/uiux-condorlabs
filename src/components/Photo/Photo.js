@@ -11,16 +11,13 @@ const Photo = (props) => {
     return ( 
 
         //este div general se encargara de pintar los datos en patanlla
-        <div className="part col-md-4 col-lg-3 p-bottom text-center">
-    <div className="losange">
-      <div className="los1">
-      <a href={props.info.link}>
-                      
-                      <img src={props.info.images.low_resolution.url} alt={props.info.username} width="100" height="100"/></a>
-        
-      </div>
-    </div>
-</div>
+        <li>
+            <a href={props.info.link} className="diamond">
+               
+                           <img className="content" src={props.info.images.standard_resolution.url} alt={props.info.username} width="390" height="640"/>
+                
+            </a>
+</li>
         
      );
 }

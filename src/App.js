@@ -36,14 +36,14 @@ class App extends Component {
   }
 
   render() { 
-    return ( <div className="container">
+    return ( <div>
        <Nav />
        <Header />
-       <div className="container">
+       
       <Gallery 
         apiGallery = {this.state.api}
       />
-     </div>
+     
       <Footer />
     </div> );
   }
