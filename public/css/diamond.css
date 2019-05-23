@@ -1,4 +1,4 @@
-
+/* codigo tomado de: https://github.com/davist11/css-diamond-grid */
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -173,7 +173,7 @@
   
   .diamonds .content {
     display: table-cell;
-    height: 260px;
+    height: 270px;
     padding: 0 10px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -182,8 +182,8 @@
     transform: rotate(45deg);
     text-align: center;
     vertical-align: middle;
-    width: 260px;
-    margin-left: -37px;
+    width: 280px;
+    margin: -43px;
   }
   @media only screen and (max-width: 537px) {
    
