@@ -7,7 +7,7 @@ class Gallery extends Component {
         return ( 
 //en este componente recorremos la api con map, es necesario utilizar las key para idententificar cada id del arreglo
             <div className="row m-bottom col-md-12">
-                
+        <ul className="none">      
          {Object.keys(this.props.apiGallery).map(key =>(
              
              <Photo
@@ -16,6 +16,7 @@ class Gallery extends Component {
                 info={this.props.apiGallery[key]}
              />
          ))}
+         </ul> 
             </div>
          );
     }
