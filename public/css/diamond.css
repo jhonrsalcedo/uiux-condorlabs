@@ -195,5 +195,11 @@
       -o-transform: rotate(0);
       transform: rotate(0);
       width: 160px;
+      margin: 0;
+      
+    }
+
+    .diamonds .content {
+        margin: 0;
     }
   }
