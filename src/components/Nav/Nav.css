@@ -10,8 +10,10 @@ a.bg-menu:hover {
     background-color: rgb(243, 238, 238)!important;
 }
 .nav-link {
-    color: #000000!important;
-    font-weight: bold;
+    color: #32332f!important;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 18px;
 }
 a.nav-link {
     color: #fff;
