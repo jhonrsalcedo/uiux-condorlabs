@@ -11,7 +11,6 @@ class Gallery extends Component {
                     {Object.keys(this.props.apiGallery).map(key => (
 
                         <Photo
-
                             key={key}
                             info={this.props.apiGallery[key]}
                         />

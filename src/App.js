@@ -24,7 +24,7 @@ class App extends Component {
     try {
       const response = await axios.get(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${this.token}`);
       //para comprabar que estamos recibiendo bien los datos de la Api ejecutiamos un console.log()
-      //console.log(response.data.data) 
+      console.log(response.data.data) 
 
       this.setState({
         api: response.data.data

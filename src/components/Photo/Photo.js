@@ -6,15 +6,16 @@ const Photo = (props) => {
     //console.log(props.info);
 
     //realizamos un destructuring para verificar en caso no exita la imagen nos retorne null
-    const { images } = props.info;
+    const { images, link,  username} = props.info;
+    
     if (!images) return null;
     return (
 
         //este li general se encargara de pintar los datos o imgenes en patanlla
         <li>
-            <a href={props.info.link} className="diamond">
+            <a href={link} className="diamond">
 
-                <img className="content" src={props.info.images.standard_resolution.url} alt={props.info.username} width="390" height="640" />
+                <img className="content" src={images.standard_resolution.url} alt={username} width="390" height="640" />
 
             </a>
         </li>
