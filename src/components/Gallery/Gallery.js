@@ -8,13 +8,14 @@ class Gallery extends Component {
             <div className="m-bottom">
                 <ul className="diamonds">
 
-                    {Object.keys(this.props.apiGallery).map(key => (
-
+                    
+                    {Object.keys(this.props.pictures).map(pic => (
                         <Photo
-                            key={key}
-                            info={this.props.apiGallery[key]}
+                            key={pic}
+                          pictures={this.props.pictures[pic]}
                         />
                     ))}
+
                 </ul>
             </div>
         );
