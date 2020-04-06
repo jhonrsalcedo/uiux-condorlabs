@@ -1,7 +1,7 @@
 import React from 'react';
 import './Photo.css'
 
-const Photo = (props) => {
+const Photo = props => {
     //verificamos si se estan pasando bien los datos al componente Photo por medio del console.log
     console.log(props.pictures);
 
